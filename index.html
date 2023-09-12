@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+          <!-- font awesome -->
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+                    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+                    crossorigin="anonymous" referrerpolicy="no-referrer" />
+          <!-- bootstrap -->
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+                    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+                    crossorigin="anonymous">
+          <!-- css -->
+          <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray">
+          <!-- login -->
+
+          <!-- facebook logo and desc -->
+          <div class="container mt-5 pt-5 d-flex flex-column flex-lg-row justify-content-evenly mt-5 pt-5">
+                    <!--  d flex aligns everythig horiz so to align vertically in mobile devices we used the dflex column-->
+                    <!-- to set back everything to row in large dev we used the flex-lg-row used justify cnt evn mt-5 pt-5 -->
+
+                    <!-- headbing -->
+                    <div class="text-center text-lg-start mt-0 pt-0 mt-lg-5 pt-lg-5">
+                              <!-- text-lg-start so that in large screen it is aligned in left-->
+
+                              <h1 class="text-primary fw-bold fs-0">facebook</h1>
+                              <!-- color set to text-primary and fontweight set to bold -->
+                              <!--  now ill be creating a custom font size so ill go to my css-->
+                              <!-- i made two custom font sizes and used the custom font size fs-0 -->
+                              <!-- now style para -->
+                              <p class="w-75 mx-auto fs-4 mx-lg-0">
+                                        <!-- i set widfth to be 75 prcnt margin left and right set to auto on large screen it reset the margin on left and right to its position and used the bootstrap font size of fs4 -->
+                                        Facebook helps you connect and share with the people in your life
+                              </p>
+                    </div>
+
+                    <!--form  -->
+                    <div style="max-width: 28rem; width: 100%">
+                              <!-- div for holding the form div is created -->
+                              <div class="bg-white shadow rounded p-3 input-group-lg">
+                                        <!-- div for each input field is created  , form-control is a clas for styling input labels using bootstrap-->
+                                        <input type="email" class="form-control my-3"
+                                                  placeholder="Email address or phone number" />
+                                        <input type="password" class="form-control my-3" placeholder="Password" />
+
+                                        <a href="feed.html">
+                                                  <button class="btn btn-primary w-100 my-3">Log In</button>
+                                        </a>
+                                        <a href="#" class="text-decoration-none text-center">
+                                                  <p>Forgotten password</p>
+                                        </a>
+                                        <!-- create form -->
+                                        <hr>
+                                        <div class="text-center my-4">
+                                                  <button class="btn btn-success btn-lg" data-bs-toggle="modal"
+                                                            data-bs-target="#createModal">Create new Account</button>
+                                        </div>
+                                        <!-- i then searched for modal and copied code from live demo section -->
+                                        <!-- create modal -->
+                                        <!-- Button trigger modal -->
+                                        <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#createmodal">
+          Launch demo modal
+        </button> from this i copied the data-bs-toggle="modal" and data-bs-target="#createmodal and placed in the button of Create Account"  so when we click create account button the modal will pop up       -->
+                                        <!-- Modal -->
+                                        <!-- now work on modal form -->
+                                        <!-- then i chjanged the id to createModal -->
+                                        <div class="modal fade" id="createModal" tabindex="-1"
+                                                  aria-labelledby="createModalLabel" aria-hidden="true">
+                                                  <div class="modal-dialog">
+                                                            <div class="modal-content">
+                                                                      <!-- head -->
+                                                                      <div class="modal-header">
+                                                                                <!-- wrap the h5 into a div -->
+                                                                                <div>
+                                                                                          <h2 class="modal-title"
+                                                                                                    id="createModalLabel">
+                                                                                                    Sign up</h2>
+                                                                                          <!-- then i set up the sign up and a p tag with small preset font-size -->
+                                                                                          <p class="text-muted fs-7">
+                                                                                                    It's quick and easy
+                                                                                          </p>
+                                                                                </div>
+                                                                                <!-- now our mddel header is finished lets move on to the3 modal body -->
+
+                                                                                <button type="button" class="btn-close"
+                                                                                          data-bs-dismiss="modal"
+                                                                                          aria-label="Close"></button>
+                                                                      </div>
+                                                                      <!-- body -->
+                                                                      <div class="modal-body">
+                                                                                <!-- name -->
+                                                                                <div class="row">
+                                                                                          <div class="col">
+                                                                                                    <input type="text"
+                                                                                                              class="form-control"
+                                                                                                              placeholder="First Name">
+                                                                                          </div>
+                                                                                          <div class="col">
+                                                                                                    <input type="text"
+                                                                                                              class="form-control"
+                                                                                                              placeholder="Second Name">
+                                                                                          </div>
+                                                                                </div>
+
+
+                                                                                <!-- email -->
+
+                                                                                <input type="email"
+                                                                                          class="form-control my-3"
+                                                                                          placeholder="Email address or mobile number">
+                                                                                <input type="passowrd"
+                                                                                          class="form-control my-3"
+                                                                                          placeholder="New Password">
+                                                                                <!-- we dont nee a row class since the email and password are gonna take the full wdth of the body -->
+                                                                                <!-- dob now lets work on dob -->
+                                                                                <div class="row my-3">
+                                                                                          <span class="text-muted fs-7">Date
+                                                                                                    of birth</span>
+                                                                                          <!-- This span tag was usedf to view  the dob -->
+                                                                                          <!-- now lets set the dob cols -->
+                                                                                          <div class="col">
+                                                                                                    <select name=""
+                                                                                                              id=""
+                                                                                                              class="form-select">
+                                                                                                              <option
+                                                                                                                        value="1">
+                                                                                                                        1
+                                                                                                              </option>
+                                                                                                              <option
+                                                                                                                        value="2">
+                                                                                                                        2
+                                                                                                              </option>
+                                                                                                              <option
+                                                                                                                        value="3">
+                                                                                                                        3
+                                                                                                              </option>
+                                                                                                              <option
+                                                                                                                        value="4">
+                                                                                                                        4
+                                                                                                              </option>
+                                                                                                              <option
+                                                                                                                        value="5">
+                                                                                                                        5
+                                                                                                              </option>
+                                                                                                              <option
+                                                                                                                        value="6">
+                                                                                                                        6
+                                                                                                              </option>
+                                                                                                              <option
+                                                                                                                        value="7">
+                                                                                                                        7
+                                                                                                              </option>
+                                                                                                              <option
+                                                                                                                        value="8">
+                                                                                                                        8
+                                                                                                              </option>
+                                                                                                              <option
+                                                                                                                        value="9">
+                                                                                                                        9
+                                                                                                              </option>
+                                                                                                              <option value="10"
+                                                                                                                        10>
+                                                                                                              </option>
+                                                                                                              <option
+                                                                                                                        value="11">
+                                                                                                                        11
+                                                                                                              </option>
+                                                                                                              <option
+                                                                                                                        value="12">
+                                                                                                                        12
+                                                                                                              </option>
+                                                                                                              <option
+                                                                                                                        value="13">
+                                                                                                                        13
+                                                                                                              </option>
+                                                                                                              <option
+                                                                                                                        value="14">
+                                                                                                                        14
+                                                                                                              </option>
+                                                                                                              <option
+                                                                                                                        value="15">
+                                                                                                                        15
+                                                                                                              </option>
+                                                                                                              <option
+                                                                                                                        value="16">
+                                                                                                                        16
+                                                                                                              </option>
+                                                                                                              <option
+                                                                                                                        value="17">
+                                                                                                                        17
+                                                                                                              </option>
+                                                                                                              <option
+                                                                                                                        value="18">
+                                                                                                                        18
+                                                                                                              </option>
+                                                                                                              <option
+                                                                                                                        value="19">
+                                                                                                                        19
+                                                                                                              </option>
+                                                                                                              <option
+                                                                                                                        value="20">
+                                                                                                                        20
+                                                                                                              </option>
+                                                                                                              <option
+                                                                                                                        value="21">
+                                                                                                                        21
+                                                                                                              </option>
+                                                                                                              <option
+                                                                                                                        value="22">
+                                                                                                                        22
+                                                                                                              </option>
+                                                                                                              <option
+                                                                                                                        value="23">
+                                                                                                                        23
+                                                                                                              </option>
+                                                                                                              <option
+                                                                                                                        value="24">
+                                                                                                                        24
+                                                                                                              </option>
+                                                                                                              <option
+                                                                                                                        value="25">
+                                                                                                                        25
+                                                                                                              </option>
+                                                                                                              <option
+                                                                                                                        value="26">
+                                                                                                                        26
+                                                                                                              </option>
+                                                                                                              <option
+                                                                                                                        value="27">
+                                                                                                                        27
+                                                                                                              </option>
+                                                                                                              <option
+                                                                                                                        value="28">
+                                                                                                                        28
+                                                                                                              </option>
+                                                                                                              <option
+                                                                                                                        value="29">
+                                                                                                                        29
+                                                                                                              </option>
+                                                                                                              <option
+                                                                                                                        value="30">
+                                                                                                                        30
+                                                                                                              </option>
+                                                                                                              <option
+                                                                                                                        value="31">
+                                                                                                                        31
+                                                                                                              </option>
+
+                                                                                                    </select>
+
+                                                                                          </div>
+
+                                                                                          <div class="col">
+                                                                                                    <select name=""
+                                                                                                              id=""
+                                                                                                              class="form-select">
+                                                                                                              <option
+                                                                                                                        value="1">
+                                                                                                                        Jan
+                                                                                                              </option>
+                                                                                                              <option
+                                                                                                                        value="2">
+                                                                                                                        Feb
+                                                                                                              </option>
+                                                                                                              <option
+                                                                                                                        value="3">
+                                                                                                                        Mar
+                                                                                                              </option>
+                                                                                                              <option
+                                                                                                                        value="4">
+                                                                                                                        Apr
+                                                                                                              </option>
+                                                                                                              <option
+                                                                                                                        value="5">
+                                                                                                                        May
+                                                                                                              </option>
+                                                                                                              <option
+                                                                                                                        value="6">
+                                                                                                                        Jun
+                                                                                                              </option>
+                                                                                                              <option
+                                                                                                                        value="7">
+                                                                                                                        Jul
+                                                                                                              </option>
+                                                                                                              <option
+                                                                                                                        value="8">
+                                                                                                                        Aug
+                                                                                                              </option>
+                                                                                                              <option
+                                                                                                                        value="9">
+                                                                                                                        Sep
+                                                                                                              </option>
+                                                                                                              <option
+                                                                                                                        value="10">
+                                                                                                                        Oct
+                                                                                                              </option>
+                                                                                                              <option
+                                                                                                                        value="11">
+                                                                                                                        Nov
+                                                                                                              </option>
+                                                                                                              <option
+                                                                                                                        value="12">
+                                                                                                                        Dec
+                                                                                                              </option>
+                                                                                                    </select>
+
+                                                                                          </div>
+
+                                                                                          <div class="col">
+                                                                                                    <select name=""
+                                                                                                              id=""
+                                                                                                              class="form-select">
+                                                                                                              <option
+                                                                                                                        value="1981">
+                                                                                                                        1981
+                                                                                                              </option>
+                                                                                                              <option
+                                                                                                                        value="1982">
+                                                                                                                        1982
+                                                                                                              </option>
+                                                                                                              <option
+                                                                                                                        value="1983">
+                                                                                                                        1983
+                                                                                                              </option>
+                                                                                                              <option
+                                                                                                                        value="1984">
+                                                                                                                        1984
+                                                                                                              </option>
+                                                                                                              <option
+                                                                                                                        value="1985">
+                                                                                                                        1985
+                                                                                                              </option>
+                                                                                                              <option
+                                                                                                                        value="1986">
+                                                                                                                        1986
+                                                                                                              </option>
+                                                                                                              <option
+                                                                                                                        value="1987">
+                                                                                                                        1987
+                                                                                                              </option>
+                                                                                                              <option
+                                                                                                                        value="1988">
+                                                                                                                        1988
+                                                                                                              </option>
+                                                                                                              <option
+                                                                                                                        value="1989">
+                                                                                                                        1989
+                                                                                                              </option>
+                                                                                                              <option
+                                                                                                                        value="1990">
+                                                                                                                        1990
+                                                                                                              </option>
+                                                                                                              <option
+                                                                                                                        value="1991">
+                                                                                                                        1991
+                                                                                                              </option>
+                                                                                                              <option
+                                                                                                                        value="1992">
+                                                                                                                        1992
+                                                                                                              </option>
+                                                                                                              <option
+                                                                                                                        value="1993">
+                                                                                                                        1993
+                                                                                                              </option>
+                                                                                                              <option
+                                                                                                                        value="1994">
+                                                                                                                        1994
+                                                                                                              </option>
+                                                                                                              <option
+                                                                                                                        value="1995">
+                                                                                                                        1995
+                                                                                                              </option>
+                                                                                                              <option
+                                                                                                                        value="1996">
+                                                                                                                        1996
+                                                                                                              </option>
+                                                                                                              <option
+                                                                                                                        value="1997">
+                                                                                                                        1997
+                                                                                                              </option>
+                                                                                                              <option
+                                                                                                                        value="1998">
+                                                                                                                        1998
+                                                                                                              </option>
+                                                                                                              <option
+                                                                                                                        value="1999">
+                                                                                                                        1999
+                                                                                                              </option>
+                                                                                                              <option
+                                                                                                                        value="2000">
+                                                                                                                        2000
+                                                                                                              </option>
+                                                                                                              <option
+                                                                                                                        value="2001">
+                                                                                                                        2001
+                                                                                                              </option>
+                                                                                                              <option
+                                                                                                                        value="2002">
+                                                                                                                        2002
+                                                                                                              </option>
+                                                                                                              <option
+                                                                                                                        value="2003">
+                                                                                                                        2003
+                                                                                                              </option>
+                                                                                                              <option
+                                                                                                                        value="2004">
+                                                                                                                        2004
+                                                                                                              </option>
+                                                                                                              <option
+                                                                                                                        value="2005">
+                                                                                                                        2005
+                                                                                                              </option>
+                                                                                                              <option
+                                                                                                                        value="2006">
+                                                                                                                        2006
+                                                                                                              </option>
+                                                                                                              <option
+                                                                                                                        value="2007">
+                                                                                                                        2007
+                                                                                                              </option>
+                                                                                                              <option
+                                                                                                                        value="2008">
+                                                                                                                        2008
+                                                                                                              </option>
+                                                                                                              <option
+                                                                                                                        value="2009">
+                                                                                                                        2009
+                                                                                                              </option>
+                                                                                                              <option
+                                                                                                                        value="2010">
+                                                                                                                        2010
+                                                                                                              </option>
+                                                                                                              <option
+                                                                                                                        value="2011">
+                                                                                                                        2011
+                                                                                                              </option>
+                                                                                                    </select>
+
+                                                                                          </div>
+                                                                                </div>
+                                                                                <!-- gender -->
+                                                                                <div class="row my-3 d-flex">
+                                                                                          <span
+                                                                                                    class="text-muted fs-7">Gender</span>
+                                                                                          <div class="col">
+                                                                                                    <div
+                                                                                                              class="border rounded p-2">
+                                                                                                              <label class="form-check-label"
+                                                                                                                        for="flexRadioDefault1">
+                                                                                                                        male
+                                                                                                              </label>
+                                                                                                              <input class="form-check-input"
+                                                                                                                        type="radio"
+                                                                                                                        name="flexRadioDefault"
+                                                                                                                        id="flexRadioDefault1">
+
+                                                                                                    </div>
+
+                                                                                          </div>
+                                                                                          <div class="col">
+                                                                                                    <div
+                                                                                                              class="border rounded p-2">
+                                                                                                              <label class="form-check-label"
+                                                                                                                        for="flexRadioDefault1">
+                                                                                                                        female
+                                                                                                              </label>
+                                                                                                              <input class="form-check-input"
+                                                                                                                        type="radio"
+                                                                                                                        name="flexRadioDefault"
+                                                                                                                        id="flexRadioDefault1">
+
+                                                                                                    </div>
+
+                                                                                          </div>
+                                                                                </div>
+                                                                      </div>
+                                                                     <div class="text-muted fs-7">By submitting you're creating an account in facebook</div>
+                                                                      <!-- disclaimer -->
+                                                                      <!-- btn -->
+                                                                      <div class="text-center mt-2 pb-2">
+                                                                      <button type="button" class="btn btn-success"
+                                                                      data-bs-dismiss="modal">Sign up</button>
+                                                            </div>
+
+
+                                                            </div>
+                                                         
+                                                          
+                                                  </div>
+                                        </div>
+                              </div>
+
+                    </div>
+
+<!-- now we have finished setting up the logo,login,signup etc now lets give a tag and move onto footer section -->
+
+
+          </div>
+          <div class="my-5 pb-5  text-center">
+                    <p class="fw-bold"><a href="#" class="text-decoration-none text-dark">
+                               Create a page <span class="fw-normal">for a celebrity brand or buisiness</span></a>
+                              
+                    </p>
+          </div>
+
+
+          </div>
+
+          <!-- footer -->
+    <footer class="bg-white p-4 text-muted">
+          <div class="container">
+                    <!-- lang -->
+                    <div class="d-flex flex-wrap">
+                              <p class="mx-2 fs-7 mb-0">English</p>
+                              <p class="mx-2 fs-7 mb-0">Hindi</p>
+                              <p class="mx-2 fs-7 mb-0">Malayalam</p>
+                              <p class="mx-2 fs-7 mb-0">Telungu</p>
+                              <p class="mx-2 fs-7 mb-0">Tamil</p>
+                    </div>
+                    <!-- flexwrap will move the wrap the item in small window -->
+<hr>
+                    <!-- action -->
+                    <div class="d-flex flex-wrap">
+                              <p class="mx-2 fs-7 mb-0">Sign Up</p>
+                              <p class="mx-2 fs-7 mb-0">Login</p>
+                              <p class="mx-2 fs-7 mb-0">Messenger</p>
+                              <p class="mx-2 fs-7 mb-0">Facebook lite</p>
+                              <p class="mx-2 fs-7 mb-0">Games</p>
+                    </div>
+
+                    <!-- copyright -->
+
+                    <div class="mt-4 mt-2">
+                              <p class="fs-7">Facebook copyright ©2023</p>
+                    </div>
+                    <!-- now  i created a custom color in the css and set the bg color in the body-->
+                    <!--the mediaquery  to set the footer to be fixed in deskltop view and free in mobile view-->
+
+          </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+          <!-- bootstrap -->
+          <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+                    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+                    crossorigin="anonymous"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+                    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+                    crossorigin="anonymous"></script>
+          <!-- main -->
+          <script src="main.js"></script>
+</body>
+
+</html>

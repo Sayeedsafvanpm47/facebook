@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- css -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray">
+  <!-- appbar -->
+  <div class="bg-white d-flex align-items-center fixed-top shadow" style="min-height: 56px; z-index: 5;">
+
+    <div class="container-fluid">
+      <div class="row align-items-center">
+
+
+        <!-- search -->
+        <div class="col d-flex align-items-center">
+          <!-- logo -->
+          <i class="fa-brands fa-facebook text-primary" style="font-size: 3rem;"></i>
+          <!-- i searched for facebook icon in fa and pasted it here no big deal brauh -->
+          <!-- searchbar -->
+          <!-- for this there is a drop down serach input and items that can be dismissed two search bars one for desktop and one for mobile in mmobile ther is only icon and in desktop full input will be there -->
+          <!-- first wrk on desktop -->
+          <div class="input-group ms-2">
+            <!-- mobile -->
+            <!-- now lets work on the mobile part and copy paste the span tag to here -->
+            <span class="input-group-prepend  d-lg-none" id="searchMenu" data-bs-toggle="dropdown" aria-expanded="false"
+              type="button" data-bs-auto-close="outside">
+              <!-- in the above span tag change the lg-block to d-lg-none and remove d-none -->
+              <div class="input-group-text bg-gray border-0 rounded-circle" style="min-height: 40px; ">
+                <i class="fa-solid fa-magnifying-glass  text-muted"></i>
+
+                <!-- then i removed p tag and removed margin in the class of i and changed rounded pill to rounded circle in the div and removed the min width -->
+                <!-- now the icon and the input text has been set,lets style this -->
+                <!-- after finisnhing the styling the col div is to d-flex -->
+              </div>
+            </span>
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- desktop -->
+            <!-- use the attribute called data-bs-auto-=close="outside inside the span tag so that it wont automatically clode after cancelling out the search reslt part"-->
+            <span class="input-group-prepend d-none d-lg-block" id="searchMenu" data-bs-toggle="dropdown"
+              aria-expanded="false" type="button" data-bs-auto-close="outside">
+              <div class="input-group-text bg-gray border-0 rounded-pill"
+                style="min-height: 40px; min-width: 230px; width: 350px;">
+                <i class="fa-solid fa-magnifying-glass me-2 text-muted"></i>
+                <p class="m-0 fs-7 text-muted">Search
+                  Facebook</p>
+                <!-- now the icon and the input text has been set,lets style this -->
+                <!-- after finisnhing the styling the col div is to d-flex -->
+              </div>
+            </span>
+            <!-- dropdown in search (i removed the start and close tag of dropdown class div then i copied the function of buttons by copying from id to aria expanded and pasted it in span tag above)-->
+
+            <!-- <button class="btn btn-secondary dropdown-toggle" type="button" id="searchMenu" data-bs-toggle="dropdown" aria-expanded="false">
+                                                              Dropdown button
+                                                            </button> -->
+            <!--  -->
+            <ul class="dropdown-menu border-0 shadow p-3 overflow-auto" style="width: 350px; max-height: 600px;"
+              aria-labelledby="searchMenu">
+              <!-- searchinput -->
+              <li>
+                <input type="text" class="rounded-pill border bg-gray dropdown-item" placeholder="Search Facebook.."
+                  auofocus>
+                <!-- in the input we used autofocus attribute for the auto focus feature -->
+              </li>
+              <!-- searchresult -->
+              <!-- or search res we are gonna use the alert code from bs -->
+              <!-- we will  paste the dismissable alert code here -->
+              <!-- result 1 -->
+              <li my-4>
+
+                <div class="alert fade show dropdown-item p-1 m-0 d-flex align-items-center justify-content-between"
+                  role="alert">
+                  <!-- inside this we willl set a div iside this div we will have the search result and an avatar-->
+                  <div class="d-flex align-items-center">
+                    <img src="pic.jpeg" alt="avatar" class="rounded-circle me-2"
+                      style="width: 35px; height: 35px; object-fit: cover;">
+                    <!-- in this above tag we can set the dp as well as the name of the person that we hav esearched -->
+                    <!-- after this set a ptag -->
+                    <p class="m-0">
+                      Sayeed
+                      safvan PM
+                    </p>
+                    <!-- after this step just copy this li tag and paste it  -->
+                  </div>
+                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+              </li>
+              <!-- result 2 -->
+              <li my-4>
+
+                <div class="alert fade show dropdown-item p-1 m-0 d-flex align-items-center justify-content-between"
+                  role="alert">
+                  <!-- inside this we willl set a div iside this div we will have the search result and an avatar-->
+                  <div class="d-flex align-items-center">
+                    <img src="pic.jpeg" alt="avatar" class="rounded-circle me-2"
+                      style="width: 35px; height: 35px; object-fit: cover;">
+                    <!-- in this above tag we can set the dp as well as the name of the person that we hav esearched -->
+                    <!-- after this set a ptag -->
+                    <p class="m-0">
+                      Sayeed
+                      safvan PM
+                    </p>
+                    <!-- after this step just copy this li tag and paste it  -->
+                  </div>
+                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+              </li>
+              <!-- result3 -->
+              <li my-4>
+
+                <div class="alert fade show dropdown-item p-1 m-0 d-flex align-items-center justify-content-between"
+                  role="alert">
+                  <!-- inside this we willl set a div iside this div we will have the search result and an avatar-->
+                  <div class="d-flex align-items-center">
+                    <img src="pic.jpeg" alt="avatar" class="rounded-circle me-2"
+                      style="width: 35px; height: 35px; object-fit: cover;">
+                    <!-- in this above tag we can set the dp as well as the name of the person that we hav esearched -->
+                    <!-- after this set a ptag -->
+                    <p class="m-0">
+                      Sayeed
+                      safvan PM
+                    </p>
+                    <!-- after this step just copy this li tag and paste it  -->
+                  </div>
+                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+              </li>
+              <li my-4>
+                <!-- result4 -->
+
+                <div class="alert fade show dropdown-item p-1 m-0 d-flex align-items-center justify-content-between"
+                  role="alert">
+                  <!-- inside this we willl set a div iside this div we will have the search result and an avatar-->
+                  <div class="d-flex align-items-center">
+                    <img src="pic.jpeg" alt="avatar" class="rounded-circle me-2"
+                      style="width: 35px; height: 35px; object-fit: cover;">
+                    <!-- in this above tag we can set the dp as well as the name of the person that we hav esearched -->
+                    <!-- after this set a ptag -->
+                    <p class="m-0">
+                      Sayeed
+                      safvan PM
+                    </p>
+                    <!-- after this step just copy this li tag and paste it  -->
+                  </div>
+                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+              </li>
+            </ul>
+
+
+
+            <!-- input-group-prepend: This class is typically used in Bootstrap to style an element that is intended to be prepended to an input field or a similar form control. It's often used in scenarios where you want to add an icon, label, or some other content before an input field.
+
+d-none: This is another Bootstrap class that is used to hide an element by default, making it invisible on the page. -->
+          </div>
+
+
+
+        </div>
+
+
+
+
+        <!-- nav -->
+        <div class="col d-none d-lg-flex justify-content-center">
+          <!-- set d-none so on mobile it wont show and d-lg-flex and justifycontent centyer so itll be at center-->
+          <!-- home -->
+          <div class="mx-4 nav__btn">
+            <button class="btn px-4">
+              <i class="fa-solid fa-house text-muted fs-4"></i>
+            </button>
+
+          </div>
+
+          <!-- group -->
+          <div class="mx-4 nav__btn ">
+            <button class="btn px-4">
+              <i class="fa-solid fa-store text-muted fs-4"></i>
+            </button>
+
+          </div>
+          <!-- Friends -->
+          <div class="mx-4 nav__btn ">
+            <button class="btn px-4">
+              <i class="fa-solid fa-user-group text-muted fs-4"></i>
+            </button>
+
+          </div>
+
+          <!-- gaming -->
+          <div class="mx-4 nav__btn">
+            <button class="btn px-4">
+              <i class="fa-solid fa-gamepad text-muted fs-4"></i>
+              <!-- this field will be a bit diff becz it has badge so search for badge in bootstrap and use it -->
+            </button>
+
+          </div>
+          <!-- to set everything active checkput the css -->
+
+        </div>
+
+
+        <!-- menu -->
+
+
+        <!-- avatar -->
+        <div class="col d-none d-lg-flex align-items-center justify-content-end">
+          <img src="pic.jpeg" alt="avatar" class="rounded-circle me-2"
+            style="width: 38px; height: 38px; object-fit: cover;">
+          <p class="m-0">Sayeed Safvan PM</p>
+        </div>
+        <!-- main menu -->
+        <div class="d-flex align-items-center justify-content-center p-1 mx-2 bg-gray rounded-circle"
+          style="width: 38px; height: 38px; object-fit: cover;" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+          aria-expanded="false" type="button">
+          <i class="fa-solid fa-ellipsis"></i>
+        </div>
+        <!-- main menu dropdown -->
+
+
+        <!-- <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown button
+          </button> i copied these and pasted it in the above div and gav ethe type as button -->
+        <ul class="dropdown-menu text-wrap overflow-auto" style="max-width: 25rem; max-height: 400px;"
+          aria-labelledby="dropdownMenuButton1">
+          <li class=" p-2 fs-2 fw-bold">Menu</li>
+          <li class="p-2 ">
+            <input type="text" class="rounded-pill border bg-gray dropdown-item" placeholder="Search Menu.." auofocus>
+          </li>
+          <li class="p-2 fs-4 fw-200 ms-2 mt-0">Social</li>
+          <li class="p-2 fs-7 fw-200 ms-2 mt-0"><i class="fa-solid fa-user-group text-muted fs-7 me-3"></i>Friends</li>
+          <li class="p-2 fs-7 fw-200 ms-2 mt-0"><i class="fa-solid fa-people-group text-muted fs-7 me-3"></i>Groups</li>
+          <li class="p-2 fs-7 fw-200 ms-2 mt-0"><i class="fa-solid fa-newspaper text-muted fs-7 me-3"></i>Newsfeed</li>
+          <li class="p-2 fs-7 fw-200 ms-2 mt-0"><i class="fa-solid fa-pager text-muted fs-7 me-3"></i>Pages</li>
+          <hr>
+          <li class="p-2 fs-4 fw-200 ms-2 mt-0">Entertainment</li>
+          <li class="p-2 fs-7 fw-200 ms-2 mt-0"><i class="fa-solid fa-gamepad text-muted fs-7 me-3"></i>Games</li>
+          <li class="p-2 fs-7 fw-200 ms-2 mt-0"><i class="fa-solid fa-film text-muted fs-7 me-3"></i>Movies</li>
+          <li class="p-2 fs-7 fw-200 ms-2 mt-0"><i class="fa-solid fa-music text-muted fs-7 me-3"></i>Music</li>
+
+          <hr>
+          <li class="p-2 fs-4 fw-200 ms-2 mt-0">Create</li>
+          <li class="p-2 fs-7 fw-200 ms-2 mt-0"><i class="fa-regular fa-pen-to-square text-muted fs-7 me-3"></i>Post
+          </li>
+          <li class="p-2 fs-7 fw-200 ms-2 mt-0"><i class="fa-solid fa-book-open text-muted fs-7 me-3"></i>Story</li>
+          <li class="p-2 fs-7 fw-200 ms-2 mt-0"><i class="fa-solid fa-video text-muted fs-7 me-3"></i>Video</li>
+          <li class="p-2 fs-7 fw-200 ms-2 mt-0"><i class="fa-solid fa-bullhorn text-muted fs-7 me-3"></i>Live</li>
+
+        </ul>
+
+
+        <!-- chat -->
+        <div class="d-flex align-items-center justify-content-center p-1 mx-2 bg-gray rounded-circle"
+          style="width: 38px; height: 38px; object-fit: cover;" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+          aria-expanded="false" type="button">
+          <i class="fa-solid fa-comment"></i>
+        </div>
+        <!-- main menu dropdown -->
+
+
+        <!-- <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown button
+          </button> i copied these and pasted it in the above div and gav ethe type as button -->
+        <ul class="dropdown-menu text-wrap overflow-auto" style="max-width: 25rem; max-height: 400px;"
+          aria-labelledby="dropdownMenuButton1">
+          <li class=" p-2 fs-2 fw-bold">
+            <div class="row">
+              <div class="col"><span>Message<span></span></div>
+              <div class="col d-none d-lg-flex justify-content-end mt-2"><i
+                  class="fa-solid fa-ellipsis text-muted p-2 fs-5"></i><i
+                  class="fa-solid fa-pen-to-square text-muted p-2 fs-5"></i></div>
+
+            </div>
+          </li>
+          <li class="p-2 ">
+            <input type="text" class="rounded-pill border bg-gray dropdown-item" placeholder="Search Messenger.."
+              auofocus>
+          </li>
+
+          <li>
+            <div class="row">
+              <div class="col d-flex align-items-center">
+                <img src="pic.jpeg" alt="avatar" class="rounded-circle ms-3"
+                  style="width: 50px; height: 50px; object-fit: cover;">
+                <p class="ms-2 text-muted fs-7" style="margin-top: 15px; text-wrap: nowrap;">Sayeed Safvan <br> <small
+                    class="fs-8"> Last seen &#46; 7 mins ago</small> </p>
+                <img src="pic.jpeg" alt="avatar" class="rounded-circle mt-4"
+                  style="width: 20px; height: 20px; margin-left: 11rem; ">
+              </div>
+
+          </li>
+
+
+          <!-- chat 2 -->
+          <li>
+            <div class="row">
+              <div class="col d-flex align-items-center">
+                <img src="pic.jpeg" alt="avatar" class="rounded-circle ms-3"
+                  style="width: 50px; height: 50px; object-fit: cover;">
+                <p class="ms-2 text-muted fs-7" style="margin-top: 15px; text-wrap: nowrap;">Sayeed Safvan <br> <small
+                    class="fs-8"> Last seen &#46; 7 mins ago</small> </p>
+                <img src="pic.jpeg" alt="avatar" class="rounded-circle mt-4"
+                  style="width: 20px; height: 20px; margin-left: 11rem; ">
+              </div>
+
+          </li>
+          <!-- chat3 -->
+          <li>
+            <div class="row">
+              <div class="col d-flex align-items-center">
+                <img src="pic.jpeg" alt="avatar" class="rounded-circle ms-3"
+                  style="width: 50px; height: 50px; object-fit: cover;">
+                <p class="ms-2 text-muted fs-7" style="margin-top: 15px; text-wrap: nowrap;">Sayeed Safvan <br> <small
+                    class="fs-8"> Last seen &#46; 7 mins ago</small> </p>
+                <img src="pic.jpeg" alt="avatar" class="rounded-circle mt-4"
+                  style="width: 20px; height: 20px; margin-left: 11rem; ">
+              </div>
+
+          </li>
+
+          <!-- chat-4 -->
+          <li>
+            <div class="row">
+              <div class="col d-flex align-items-center">
+                <img src="pic.jpeg" alt="avatar" class="rounded-circle ms-3"
+                  style="width: 50px; height: 50px; object-fit: cover;">
+                <p class="ms-2 text-muted fs-7" style="margin-top: 15px; text-wrap: nowrap;">Sayeed Safvan <br> <small
+                    class="fs-8"> Last seen &#46; 7 mins ago</small> </p>
+                <img src="pic.jpeg" alt="avatar" class="rounded-circle mt-4"
+                  style="width: 20px; height: 20px; margin-left: 11rem; ">
+              </div>
+
+          </li>
+          <hr>
+          <p class="text-info fs-6 fw-bold text-center">See all in Messenger</p>
+        </ul>
+        <!-- chat-end -->
+
+
+
+        <!-- notifications -->
+
+        <div class="d-flex align-items-center justify-content-center p-1 mx-2 bg-gray rounded-circle"
+          style="width: 38px; height: 38px; object-fit: cover;" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+          aria-expanded="false" type="button">
+          <i class="fa-solid fa-bell"> </i>
+        </div>
+        <!-- main menu dropdown -->
+
+
+        <!-- <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Dropdown button
+                                                  </button> i copied these and pasted it in the above div and gav ethe type as button -->
+        <ul class="dropdown-menu text-wrap overflow-auto" style="max-width: 25rem; max-height: 400px;"
+          aria-labelledby="dropdownMenuButton1">
+          <li class=" p-2 fs-2 fw-bold">Notifications
+
+            <i class="fa-solid fa-ellipsis fs-4 text-muted" style="margin-left: 130px;"></i>
+          </li>
+
+          <li>
+            <button type="button" class="btn btn-light rounded-pill"> <span
+                class="badge badge-light text-dark ">All</span></button>
+
+            <button type="button" class="btn btn-primary rounded-pill"> <span
+                class="badge badge-primary text-light ">Unread</span></button>
+
+          </li>
+          <li>
+            <div class="d-flex" style="height:35px;">
+              <p class="fs-4 fw-700 ms-3 mt-3">
+
+                New
+              </p>
+              <a href="#" class="text-decoration-none text-primary float-right mt-4"
+                style="margin: 70%; text-wrap: nowrap;">See all</a>
+            </div>
+          </li>
+          <li>
+            <div class="row">
+              <div class="col d-flex align-items-center">
+                <img src="pic.jpeg" alt="avatar" class="rounded-circle ms-3"
+                  style="width: 50px; height: 50px; object-fit: cover;">
+                <p class="ms-2 text-muted fs-7" style="margin-top: 15px; text-wrap: nowrap;">Sayeed Safvan <br> <small
+                    class="fs-8"> Last seen &#46; 7 mins ago</small> </p>
+                <img src="pic.jpeg" alt="avatar" class="rounded-circle mt-4"
+                  style="width: 20px; height: 20px; margin-left: 11rem; ">
+              </div>
+
+          </li>
+
+
+          <!-- chat 2 -->
+          <li>
+            <div class="row">
+              <div class="col d-flex align-items-center">
+                <img src="pic.jpeg" alt="avatar" class="rounded-circle ms-3"
+                  style="width: 50px; height: 50px; object-fit: cover;">
+                <p class="ms-2 text-muted fs-7" style="margin-top: 15px; text-wrap: nowrap;">Sayeed Safvan <br> <small
+                    class="fs-8"> Last seen &#46; 7 mins ago</small> </p>
+                <img src="pic.jpeg" alt="avatar" class="rounded-circle mt-4"
+                  style="width: 20px; height: 20px; margin-left: 11rem; ">
+              </div>
+
+          </li>
+          <!-- chat3 -->
+          <li>
+            <div class="row">
+              <div class="col d-flex align-items-center">
+                <img src="pic.jpeg" alt="avatar" class="rounded-circle ms-3"
+                  style="width: 50px; height: 50px; object-fit: cover;">
+                <p class="ms-2 text-muted fs-7" style="margin-top: 15px; text-wrap: nowrap;">Sayeed Safvan <br> <small
+                    class="fs-8"> Last seen &#46; 7 mins ago</small> </p>
+                <img src="pic.jpeg" alt="avatar" class="rounded-circle mt-4"
+                  style="width: 20px; height: 20px; margin-left: 11rem; ">
+              </div>
+
+          </li>
+
+          <!-- chat-4 -->
+          <li>
+            <div class="row">
+              <div class="col d-flex align-items-center">
+                <img src="pic.jpeg" alt="avatar" class="rounded-circle ms-3"
+                  style="width: 50px; height: 50px; object-fit: cover;">
+                <p class="ms-2 text-muted fs-7" style="margin-top: 15px; text-wrap: nowrap;">Sayeed Safvan <br> <small
+                    class="fs-8"> Last seen &#46; 7 mins ago</small> </p>
+                <img src="pic.jpeg" alt="avatar" class="rounded-circle mt-4"
+                  style="width: 20px; height: 20px; margin-left: 11rem; ">
+              </div>
+
+          </li>
+        </ul>
+
+
+
+        <!-- secondarymenu -->
+        <div class="d-flex align-items-center justify-content-center p-1 mx-2 bg-gray rounded-circle"
+          style="width: 38px; height: 38px; object-fit: cover;" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+          aria-expanded="false" type="button">
+          <i class="fa-solid fa-caret-down"></i>
+        </div>
+        <!-- main menu dropdown -->
+
+
+        <!-- <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Dropdown button
+                                                  </button> i copied these and pasted it in the above div and gav ethe type as button -->
+        <ul class="dropdown-menu text-wrap overflow-auto" style="max-width: 20rem; max-height: 400px;"
+          aria-labelledby="dropdownMenuButton1">
+
+
+          <li>
+
+
+            <div class="d-flex align-items-center">
+              <img src="pic.jpeg" alt="avatar" class="rounded-circle ms-3"
+                style="width: 50px; height: 50px; object-fit: cover;">
+              <p class="ms-2 text-dark fw-bold fs-6" style="margin-top: 15px; text-wrap: nowrap;">Sayeed Safvan <br>
+                <small class="fs-7 fw-normal text-muted"> See your profile</small> </p>
+            </div>
+          </li>
+          <hr>
+          <li>
+            <div class="d-flex align-items-center">
+              <i class="fa-solid fa-circle-info ms-3 me-0 fs-1" style="width: 80px; height: 80px; "></i>
+              <p class="text-dark fw-normal fs-6" style="margin-top: -25px; text-wrap: nowrap; margin-left: -25px;">Give
+                Feedback <br> <small class="fs-8 fw-normal text-muted"> Help us improve the new Facebook</small> </p>
+          </li>
+          <hr style="margin-top: -10px;">
+
+          <li class="p-2 fs-7 fw-200 ms-2 mt-0"><i class="fa-solid fa-user-group text-muted fs-7 me-3"></i>Settings
+            <button style="margin-left: 9rem;" class="border-0 btn"><i
+                class="fa-solid fa-caret-right text-muted fs-9"></i></button></li>
+
+
+          <li class="p-2 fs-7 fw-200 ms-2 mt-0"><i class="fa-solid fa-people-group text-muted fs-7 me-3"></i>Help &amp;
+            Support <button style="margin-left: 5.7rem;" class="border-0 btn"><i
+                class="fa-solid fa-caret-right text-muted fs-9"></i></button></li>
+          </li>
+          <li class="p-2 fs-7 fw-200 ms-2 mt-0"><i class="fa-solid fa-newspaper text-muted fs-7 me-3"></i>Display &amp;
+            Accessibility <button style="margin-left: 3rem;" class="border-0 btn"><i
+                class="fa-solid fa-caret-right text-muted fs-9"></i></button></li>
+          </li>
+          <li class="p-2 fs-7 fw-200 ms-2 mt-0"><i class="fa-solid fa-newspaper text-muted fs-7 me-3"></i>Logout</li>
+
+
+
+
+        </ul>
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+  </div>
+
+
+
+
+  <!--main content  -->
+  <div class="container-fluid">
+    <div class="row justify-content-evenly">
+
+      <!-- sidebar -->
+      <div class=" col-12 col-lg-3 border-right">
+
+        <div class="d-none xxl-d-block h-100 fixed-top overflow-hidden"
+          style="max-width: 360px; width: 100%; z-index: 4;"></div>
+        <ul class="navbar_nav mt-4 ms-3 d-flex flex-column pb-5 mb-5" style="padding-top: 56px;">
+          <!-- top -->
+
+          <!-- avatar -->
+          <li class="dropdown-item p-1 rounded">
+            <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
+              <div class="p-1">
+                <img src="pic.jpeg" alt="bruh" class="rounded-circle me-2"
+                  style="width: 38px; height: 38px; object-fit: cover;">
+
+              </div>
+              <div>
+                <p class="m-0">Sayeed Safvan P M</p>
+              </div>
+            </a>
+
+          </li>
+          <li class="dropdown-item p-1 rounded">
+            <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
+              <div class="p-1">
+                <img src="pic.jpeg" alt="bruh" class="rounded-circle me-2"
+                  style="width: 38px; height: 38px; object-fit: cover;">
+
+              </div>
+              <div>
+                <p class="m-0">Sayeed Safvan P M</p>
+              </div>
+            </a>
+
+          </li>
+
+          <li class="dropdown-item p-1 rounded">
+            <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
+              <div class="p-1">
+                <img src="pic.jpeg" alt="bruh" class="rounded-circle me-2"
+                  style="width: 38px; height: 38px; object-fit: cover;">
+
+              </div>
+              <div>
+                <p class="m-0">Sayeed Safvan P M</p>
+              </div>
+            </a>
+
+          </li>
+
+          <li class="dropdown-item p-1 rounded">
+            <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
+              <div class="p-1">
+                <img src="pic.jpeg" alt="bruh" class="rounded-circle me-2"
+                  style="width: 38px; height: 38px; object-fit: cover;">
+
+              </div>
+              <div>
+                <p class="m-0">Sayeed Safvan P M</p>
+              </div>
+            </a>
+
+          </li>
+
+          <li class="dropdown-item p-1 rounded">
+            <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
+              <div class="p-1">
+                <img src="pic.jpeg" alt="bruh" class="rounded-circle me-2"
+                  style="width: 38px; height: 38px; object-fit: cover;">
+
+              </div>
+              <div>
+                <p class="m-0">Sayeed Safvan P M</p>
+              </div>
+            </a>
+
+          </li>
+
+          <li class="dropdown-item p-1 rounded">
+            <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
+              <div class="p-1">
+                <img src="pic.jpeg" alt="bruh" class="rounded-circle me-2"
+                  style="width: 38px; height: 38px; object-fit: cover;">
+
+              </div>
+              <div>
+                <p class="m-0">Sayeed Safvan P M</p>
+              </div>
+            </a>
+
+          </li>
+
+          <li class="p-1" type="button">
+            <!-- accordion -->
+            <div id="accordionExample">
+              <div>
+                <!-- See more -->
+                <div>
+                  <div class="d-flex align-items-center border-0 " type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    See more
+                    <!-- checl out info on aria expamded -->
+                    <div class="p-2">
+                      <i class="fas fa-chevron-down rounded-circle p-2"
+                        style="background-color: #d5d5d5 !important;"></i>
+                    </div>
+                  </div>
+                </div>
+                <!-- content -->
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample">
+                  <div>
+                    <!-- item1 -->
+                    <div class="text-dark d-flex align-items-center">
+                      <div class="p-1">
+                        <img src="pic.jpeg" alt="bruh" class="rounded-circle me-2"
+                          style="width: 38px; height: 38px; object-fit: cover;">
+
+                      </div>
+                      <div>
+                        <p class="m-0">Sayeed Safvan P M</p>
+                      </div>
+
+                    </div>
+
+                    <div class="text-dark d-flex align-items-center">
+                      <div class="p-1">
+                        <img src="pic.jpeg" alt="bruh" class="rounded-circle me-2"
+                          style="width: 38px; height: 38px; object-fit: cover;">
+
+                      </div>
+                      <div>
+                        <p class="m-0">Sayeed Safvan P M</p>
+                      </div>
+
+                    </div>
+                    <div class="text-dark d-flex align-items-center">
+                      <div class="p-1">
+                        <img src="pic.jpeg" alt="bruh" class="rounded-circle me-2"
+                          style="width: 38px; height: 38px; object-fit: cover;">
+
+                      </div>
+                      <div>
+                        <p class="m-0">Sayeed Safvan P M</p>
+                      </div>
+
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+
+
+
+            </div>
+          </li>
+        </ul>
+
+
+          <!-- search for accordion to include in the sidebar -->
+
+<!-- accordion and first portion of side bar end -->
+
+<hr>
+<h2 class="fs-4 text-muted">Your Shortcuts</h2>
+
+          <!-- shortcut -->
+
+          <div class="d-none lg-d-block h-100 fixed-top overflow-hidden"   
+          style="max-width: 360px; width: 100%; z-index: 4;"></div>
+       
+        <ul class="navbar_nav mt-4 ms-3 d-flex flex-column pb-5 mb-5" ">
+          <!-- top -->
+
+          <!-- avatar -->
+          <li class="dropdown-item p-1 rounded">
+            <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
+              <div class="p-1">
+                <img src="pic.jpeg" alt="bruh" class="rounded-circle me-2"
+                  style="width: 38px; height: 38px; object-fit: cover;">
+
+              </div>
+              <div>
+                <p class="m-0">Sayeed Safvan P M</p>
+              </div>
+            </a>
+
+          
+
+          <li class="dropdown-item p-1 rounded">
+            <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
+              <div class="p-1">
+                <img src="pic.jpeg" alt="bruh" class="rounded-circle me-2"
+                  style="width: 38px; height: 38px; object-fit: cover;">
+
+              </div>
+              <div>
+                <p class="m-0">Sayeed Safvan P M</p>
+              </div>
+            </a>
+
+          </li>
+
+          <li class="dropdown-item p-1 rounded">
+            <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
+              <div class="p-1">
+                <img src="pic.jpeg" alt="bruh" class="rounded-circle me-2"
+                  style="width: 38px; height: 38px; object-fit: cover;">
+
+              </div>
+              <div>
+                <p class="m-0">Sayeed Safvan P M</p>
+              </div>
+            </a>
+
+          </li>
+
+          <li class="p-1" type="button">
+            <!-- accordion -->
+            <div id="accordionExample">
+              <div>
+                <!-- See more -->
+                <div>
+                  <div class="d-flex align-items-center border-0 " type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    See more
+                    <!-- checl out info on aria expamded -->
+                    <div class="p-2">
+                      <i class="fas fa-chevron-down rounded-circle p-2"
+                        style="background-color: #d5d5d5 !important;"></i>
+                    </div>
+                  </div>
+                </div>
+                <!-- content -->
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample">
+                  <div>
+                    <!-- item1 -->
+                    <div class="text-dark d-flex align-items-center">
+                      <div class="p-1">
+                        <img src="pic.jpeg" alt="bruh" class="rounded-circle me-2"
+                          style="width: 38px; height: 38px; object-fit: cover;">
+
+                      </div>
+                      <div>
+                        <p class="m-0">Sayeed Safvan P M</p>
+                      </div>
+
+                    </div>
+
+                    <div class="text-dark d-flex align-items-center">
+                      <div class="p-1">
+                        <img src="pic.jpeg" alt="bruh" class="rounded-circle me-2"
+                          style="width: 38px; height: 38px; object-fit: cover;">
+
+                      </div>
+                      <div>
+                        <p class="m-0">Sayeed Safvan P M</p>
+                      </div>
+
+                    </div>
+                   
+
+
+                  </div>
+                </div>
+              </div>
+
+
+
+            </div>
+          </li>
+        </ul>
+       
+    
+
+
+<!-- footer sidebar -->
+<div class="fs-9">
+  <p> Privacy • Terms • Advertising • Ad Choices • Cookies • Flexbook © 2021</p>
+</div>
+
+
+
+
+
+        </div>
+        <!-- sidebar end -->
+
+        <!-- =========================================================================== -->
+
+      <!-- feed -->
+      <div class="col-12 col-lg-6 border-right">
+
+      </div>
+
+
+
+<!-- ================================================================================ -->
+
+
+  
+            
+      <!-- chatbar  -->
+      <div class="d-none d-md-block col-12 col-lg-3">
+
+        <div class="d-none d-xxl-block h-100 fixed-top end-0 overflow-hidden" style="max-width: 360px; width: 100%; z-index: 4; padding-top: 56px; left: initial !important;"></div>
+            
+         <div class="p-3 mt-4">
+          <!-- sponsors -->
+          <h5 class="text-muted fs-4 mt-4">Sponsored</h5>
+
+          <!-- sponser 1 -->
+        <div class="d-flex mb-3">
+          
+          <img src="pic.jpeg" class="rounded" style="height: 5.2rem; width: 5.2rem;" alt="">
+          <p class="text-muted p-2 fs-9" style="line-height: 1rem;"><a href="#" class="text-decoration-none text-muted" data-bs-toggle="tooltip" title="www.amazon.com" >Check out this ibanez guitar on amazon!! <br class="fs-8"> www.amazon.com</a></p>
+        </div>
+        
+        <div class="d-flex mb-3">
+          
+          <img src="pic.jpeg" class="rounded" style="height: 5.2rem; width: 5.2rem;" alt="">
+          <p class="text-muted p-2 fs-9" style="line-height: 1rem;"><a href="#" class="text-decoration-none text-muted" data-bs-toggle="tooltip" title="www.amazon.com" >Check out this ibanez guitar on amazon!! <br class="fs-8"> www.amazon.com</a></p>
+        </div>
+              
+      <hr>
+
+          
+          <!-- contancts -->
+          <div class="d-flex">
+          <h5 class="text-muted fw-normal fs-5 ">Contacts</h5>
+          <i class="fa-solid fa-video text-muted mt-2" style="margin-left: 10rem; cursor: pointer;"></i>
+          <i class="fa-solid fa-magnifying-glass mt-2 ms-4" style="cursor: pointer;"></i>
+          <i class="fa-solid fa-ellipsis mt-2 ms-4" style="cursor: pointer;"></i>
+        </div>
+        <!-- friends -->
+        <div>
+         
+            <div class="p-1 d-flex mb-2" style="position: relative;">
+              <img src="pic.jpeg" alt="bruh" class="rounded-circle me-2"
+                style="width: 38px; height: 38px; object-fit: cover;"><span class="bg-success rounded-circle" style="height: 10px; width: 10px; position:absolute; margin-top: 1.7rem; margin-left: 32px;"></span>
+             <p class="m-0 mt-1">Sayeed Safvan P M</p>
+
+            </div>
+
+            <div class="p-1 d-flex mb-2" style="position: relative;">
+              <img src="pic.jpeg" alt="bruh" class="rounded-circle me-2"
+                style="width: 38px; height: 38px; object-fit: cover;"><span class="bg-grey1 rounded-circle" style="height: 10px; width: 10px; position:absolute; margin-top: 1.7rem; margin-left: 32px;"></span>
+             <p class="m-0 mt-1">Sayeed Safvan P M</p>
+
+            </div>
+            <div class="p-1 d-flex mb-2" style="position: relative;">
+              <img src="pic.jpeg" alt="bruh" class="rounded-circle me-2"
+                style="width: 38px; height: 38px; object-fit: cover;"><span class="bg-success rounded-circle" style="height: 10px; width: 10px; position:absolute; margin-top: 1.7rem; margin-left: 32px;"></span>
+             <p class="m-0 mt-1">Sayeed Safvan P M</p>
+
+            </div>
+            <div class="p-1 d-flex mb-2" style="position: relative;">
+              <img src="pic.jpeg" alt="bruh" class="rounded-circle me-2"
+                style="width: 38px; height: 38px; object-fit: cover;"><span class="bg-grey1 rounded-circle" style="height: 10px; width: 10px; position:absolute; margin-top: 1.7rem; margin-left: 32px;"></span>
+             <p class="m-0 mt-1">Sayeed Safvan P M</p>
+
+            </div>
+            <div class="p-1 d-flex mb-2" style="position: relative;">
+              <img src="pic.jpeg" alt="bruh" class="rounded-circle me-2"
+                style="width: 38px; height: 38px; object-fit: cover;"><span class="bg-grey1 rounded-circle" style="height: 10px; width: 10px; position:absolute; margin-top: 1.7rem; margin-left: 32px;"></span>
+             <p class="m-0 mt-1">Sayeed Safvan P M</p>
+
+            </div>
+            <div class="p-1 d-flex mb-2" style="position: relative;">
+              <img src="pic.jpeg" alt="bruh" class="rounded-circle me-2"
+                style="width: 38px; height: 38px; object-fit: cover;"><span class="bg-success rounded-circle" style="height: 10px; width: 10px; position:absolute; margin-top: 1.7rem; margin-left: 32px;"></span>
+             <p class="m-0 mt-1">Sayeed Safvan P M</p>
+
+            </div>
+
+            <div class="p-1 d-flex mb-2" style="position: relative;">
+              <img src="pic.jpeg" alt="bruh" class="rounded-circle me-2"
+                style="width: 38px; height: 38px; object-fit: cover;"><span class="bg-success rounded-circle" style="height: 10px; width: 10px; position:absolute; margin-top: 1.7rem; margin-left: 32px;"></span>
+             <p class="m-0 mt-1">Sayeed Safvan P M</p>
+
+            </div>
+
+            <div class="p-1 d-flex mb-2" style="position: relative;">
+              <img src="pic.jpeg" alt="bruh" class="rounded-circle me-2"
+                style="width: 38px; height: 38px; object-fit: cover;"><span class="bg-success rounded-circle" style="height: 10px; width: 10px; position:absolute; margin-top: 1.7rem; margin-left: 32px;"></span>
+             <p class="m-0 mt-1">Sayeed Safvan P M</p>
+
+            </div>
+
+            
+            <div class="p-1 d-flex mb-2" style="position: relative;">
+              <img src="pic.jpeg" alt="bruh" class="rounded-circle me-2"
+                style="width: 38px; height: 38px; object-fit: cover;"><span class="bg-grey1 rounded-circle" style="height: 10px; width: 10px; position:absolute; margin-top: 1.7rem; margin-left: 32px;"></span>
+             <p class="m-0 mt-1">Sayeed Safvan P M</p>
+
+            </div>
+
+            <div class="p-1 d-flex mb-2" style="position: relative;">
+              <img src="pic.jpeg" alt="bruh" class="rounded-circle me-2"
+                style="width: 38px; height: 38px; object-fit: cover;"><span class="bg-success rounded-circle" style="height: 10px; width: 10px; position:absolute; margin-top: 1.7rem; margin-left: 32px;"></span>
+             <p class="m-0 mt-1">Sayeed Safvan P M</p>
+
+            </div>
+            <div class="p-1 d-flex mb-2" style="position: relative; bottom: 0;">
+              <img src="pic.jpeg" alt="bruh" class="rounded-circle me-2"
+                style="width: 38px; height: 38px; object-fit: cover;"><span class="bg-success rounded-circle" style="height: 10px; width: 10px; position:absolute; margin-top: 1.7rem; margin-left: 32px;"></span>
+             <p class="m-0 mt-1">Sayeed Safvan P M</p>
+
+            </div>
+
+
+            
+            
+          
+            
+            </div>
+         
+
+
+
+      
+
+
+
+
+   
+
+
+
+
+
+
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  <!-- bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+  <!-- main -->
+  <script src="main.js"></script>
+</body>
+
+</html>

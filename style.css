@@ -1,0 +1,46 @@
+/* creating custom font size as in the video */
+.fs-0 {
+          font-size: 4rem;
+}
+.fs-7 {
+          font-size: 0.8 rem;
+}
+.fs-8{
+          font-size: 0.6rem;
+}
+.fs-9{
+          font-size: 0.7rem;
+}
+.bg-gray{
+ background-color: #f0f2f5 !important;
+}
+
+
+/* the mediaquery  to set the footer to be fixed in deskltop view and free in mobile view*/
+@media (min-width: 62em){
+          footer{
+                    position: fixed;
+                    bottom: 0;
+                    width: 100%;
+          }
+}
+li:hover{
+         
+          cursor: pointer;
+          background-color: rgba(239, 245, 241, 0.897);
+}
+.border-right {
+          border-right: 1px solid #ddd;
+          transition: ease-in-out .6s;
+      }
+     
+      i{
+        cursor: pointer !important;
+      }
+      i:hover{
+        color: rgb(26, 174, 223);
+        transform: scale(1.2) !important;
+      }
+      .bg-grey1{
+             background-color: rgb(79, 77, 77);
+      }
