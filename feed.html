@@ -531,10 +531,10 @@ d-none: This is another Bootstrap class that is used to hide an element by defau
     <div class="row justify-content-evenly">
 
       <!-- sidebar -->
-      <div class=" col-12 col-lg-3 border-right">
+      <div class="d-none d-md-block col-12 col-lg-3 border-right">
 
-        <div class="d-none xxl-d-block h-100 fixed-top overflow-hidden"
-          style="max-width: 360px; width: 100%; z-index: 4;"></div>
+        <div class="d-none d-xxl-block h-100 fixed-top overflow-hidden scrollbar"
+          style="max-width: 360px; width: 100%; z-index: 4;">
         <ul class="navbar_nav mt-4 ms-3 d-flex flex-column pb-5 mb-5" style="padding-top: 56px;">
           <!-- top -->
 
@@ -755,7 +755,7 @@ d-none: This is another Bootstrap class that is used to hide an element by defau
                 <!-- See more -->
                 <div>
                   <div class="d-flex align-items-center border-0 " type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
                     See more
                     <!-- checl out info on aria expamded -->
                     <div class="p-2">
@@ -765,7 +765,7 @@ d-none: This is another Bootstrap class that is used to hide an element by defau
                   </div>
                 </div>
                 <!-- content -->
-                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="headingOne"
                   data-bs-parent="#accordionExample">
                   <div>
                     <!-- item1 -->
@@ -799,7 +799,7 @@ d-none: This is another Bootstrap class that is used to hide an element by defau
                 </div>
               </div>
 
-
+</div>
 
             </div>
           </li>
@@ -823,10 +823,876 @@ d-none: This is another Bootstrap class that is used to hide an element by defau
         <!-- =========================================================================== -->
 
       <!-- feed -->
-      <div class="col-12 col-lg-6 border-right">
+      <div class="col-12 col-lg-6">
 
+        <div class="d-flex  justify-content-center w-100 mx-auto" style="padding-top: 64px; max-width: 680px;">
+        
+        <!-- stories -->
+        <!-- lets build the cards -->
+
+        <!-- story 1 -->
+
+        <div class="mx-1 bg-white rounded" type="button" style="width: 6em; height: 190px;" >
+        <img src="pic.jpeg" alt="story" class="card-img-top">
+        <div class="d-flex align-items-center justify-content-center position-relative" style="min-height: 65px;">
+        <p class="mb-0 text-center fs-7 fw-bold">Create Story</p>
+
+        <div class="position-absolute top-0 start-50 translate-middle">
+          <i class="fas fa-plus-circle fs-3 text-primary bg-white p-1 rounded-circle"></i>
+         
+        </div>
+        <!-- translate middle In addition, you can also center the elements with the transform utility class .translate-middle . This class applies the transformations translateX(-50%) and translateY(-50%) to the element which, in combination with the edge positioning utilities, allows you to absolute center an element. -->
+        </div>
+
+        </div>
+
+      <div class="rounded mx-1" type="button" style="width: 6em; height: 190px;" > 
+      
+        <img src="pic.jpeg" alt="story" class="card-img-top rounded" style="min-height: 190px; object-fit: cover;">
       </div>
 
+      <div class="rounded mx-1" type="button" style="width: 6em; height: 190px;" > 
+      
+        <img src="pic.jpeg" alt="story" class="card-img-top rounded" style="min-height: 190px; object-fit: cover;">
+      </div>
+
+
+      <div class="rounded mx-1" type="button" style="width: 6em; height: 190px;" > 
+      
+        <img src="pic.jpeg" alt="story" class="card-img-top rounded" style="min-height: 190px; object-fit: cover;">
+      </div>
+
+      <div class="rounded mx-1 d-none d-lg-block" type="button" style="width: 6em; height: 190px;" > 
+      
+        <img src="pic.jpeg" alt="story" class="card-img-top rounded" style="min-height: 190px; object-fit: cover;">
+      </div>
+
+      <div class="rounded mx-1 d-none d-lg-block" type="button" style="width: 6em; height: 190px;" > 
+      
+        <img src="pic.jpeg" alt="story" class="card-img-top rounded" style="min-height: 190px; object-fit: cover;">
+      </div>
+
+    
+
+      </div>
+          
+
+        <!-- create post -->
+       
+        <!-- create post -->
+
+        <div class="bg-white p-3 mt-3 rounded border shadow">
+          <!-- avatar -->
+          <div class="d-flex" type="button" >
+<div class="p-1">
+<img src="pic.jpeg" alt="avatar" class="rounded-circle me-2" style="width: 38px; height: 38px; object-fit: cover;">
+
+</div>
+<input type="text" class="form-control rounded-pill border-0 bg-gray" placeholder="What's on your mind, Sayeed?" disabled>
+
+          </div>
+
+      
+
+          <!-- actions -->
+
+          <div class="d-flex flex-column flex-lg-row mt-3">
+             <!-- action 1 -->
+
+             <div class="d-flex align-items-center justify-content-center rounded dropdown-item" type="buttom">
+              <i class="fas fa-video me-2 text-danger"></i>
+              <p class="m-0 text-muted">Live Video</p>
+             </div>
+
+             <div class="d-flex align-items-center justify-content-center rounded dropdown-item" type="buttom">
+              <i class="fas fa-photo-video me-2 text-success"></i>
+              <p class="m-0 text-muted">Photo/Video</p>
+             </div>
+
+             <div class="d-flex align-items-center justify-content-center rounded dropdown-item" type="buttom">
+              <i class="fas fa-smile me-2 text-warning"></i>
+              <p class="m-0 text-muted">Feeling/Activity</p>
+             </div>
+
+    
+
+            </div>
+ 
+
+          </div>
+
+ 
+<!-- create room -->
+ <!-- set this if you have time tmrw -->
+
+
+
+ 
+<!-- post 1 -->
+
+ 
+ 
+
+<div class="bg-white p-4 rounded shadow mt-3">
+
+  <!-- author -->
+
+  <div class="d-flex justify-content-between">
+
+    <!-- avatr -->
+
+    <div class="d-flex">
+      <img src="pic.jpeg" alt="bruh" class="rounded-circle me-2" style="height: 38px; width: 38px; object-fit: cover;">
+      <div>
+        <p class="m-0" fw-bold">Sayeed Safvan P M</p>
+        <span class="text-muted" fs-7">September 13 at 1:45am</span>
+      </div>
+    </div>
+    <!-- edit -->
+    <i class="fas fa-ellipsis-h" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="post1" ></i>
+
+    <!-- editmenu -->
+    <ul class="dropdown-menu border-0 shadow" aria-labelledby="post1">
+<li class="d-flex align-items-center">
+
+  <a href="#" class="dropdown-item d-flex align-items-center justify-content-center fs-7">Edit Post</a>
+
+</li>
+
+<li class="d-flex align-items-center">
+
+  <a href="#" class="dropdown-item d-flex align-items-center justify-content-center fs-7">Delete Post</a>
+
+</li>
+
+<li class="d-flex align-items-center">
+
+  <a href="#" class="dropdown-item d-flex align-items-center justify-content-center fs-7">Share Post</a>
+
+</li>
+
+
+
+    </ul>
+
+
+  </div>
+      <!-- content -->
+  <div class="mt-3 d-flex align-items-center justify-content-center">
+
+    <div>
+      <p>Hey guys.. Its me sayeed</p>
+      <img src="pic.jpeg" alt="bruh" class="img-fluid">
+      <!-- imgfluid used to keep my image responsive -->
+    </div>
+    
+     </div>
+
+<!-- comment section -->
+<div class="position-relative mt-3 post__comment">
+
+  <!-- in the comments ill be using the accordion -->
+
+  <!-- likes -->
+
+
+  <div class="d-flex align-items-center position-absolute top-0 start-0" style="height: 50px; z-index: 5;">
+  <div class="me-2">
+     <i class="fas fa-thumbs-up text-primary"></i>
+     <i class="fab fa-gratipay text-danger"></i>
+     <i class="fas fa-grin-squint text-warning"></i>
+     <!-- this caused some issues in the display so ill be giving this a custom style in the css, so thats why i used the custom class post__comment in the main div -->
+
+  </div>
+   <p class="m-0 text-muted fs-7">Rashid, Hakim and 3 others</p>
+
+  </div>
+
+
+  <div class="accordion" id="accordionExample">
+    <div class="accordion-item border-0">
+
+      <!-- comment collapse -->
+
+
+      <h2 class="accordion-header" id="headingOne">
+        <div class="accordion-button collapsed d-none d-lg-flex justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#post1" aria-expanded="true" aria-controls="collapseOne" style="background-color: transparent !important;">
+         Hakeem and 3 others commented...
+        </div>
+      </h2>
+
+
+      <!-- likes bar -->
+
+        <div class="d-flex justify-content-around">
+
+
+
+          <!-- like icon-->
+
+          <div class="d-flex align-items-center justify-content-center dropdown-item text-muted p-1 likebtn" type="button" style="margin-top: -10px;" >
+
+            <i class="fas fa-thumbs-up me-3"></i>
+            <p class="m-0">Like</p>
+
+
+          </div>
+          <!-- comment icon -->
+
+          <div class="d-flex align-items-center justify-content-center dropdown-item text-muted p-1 cmntbtn" type="button" data-bs-toggle="collapse" data-bs-target="#post1" aria-expanded="true" aria-controls="collapseOne" style="margin-top: -10px;">
+
+            <i class="fas fa-comment-alt me-3"></i>
+            <p class="m-0">Comment</p>
+
+
+          </div>
+
+
+          
+ 
+
+        </div>
+      
+
+
+
+      <!-- comment expand -->
+      <div id="post1" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+         <!-- comment1 -->
+         <div class="d-flex align-items-center my-1">
+          
+          <!-- avatar -->
+          <img src="pic.jpeg" alt="avatar" class="rounded-circle" style="height: 38px; width: 38px; object-fit: cover;">
+            <!-- cmmnt -->
+
+            <div class="p-3 rounded w-100 comment__input">
+              <!-- menu -->
+                 <div class="d-flex justify-content-end">
+                  <i class="fas fa-ellipsis-h" type="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
+
+                  <!-- menu -->
+                  <ul class="dropdown-menu border-0 shadow" aria-labelledby="post1">
+                    <li class="d-flex align-items-center">
+                    
+                      <a href="#" class="dropdown-item d-flex align-items-center justify-content-center fs-7">Delete Comment</a>
+                    
+                    </li>
+                    
+                    <li class="d-flex align-items-center">
+                    
+                      <a href="#" class="dropdown-item d-flex align-items-center justify-content-center fs-7">Report Comment</a>
+                    
+                    </li>
+                    
+                    <li class="d-flex align-items-center">
+                    
+                      <a href="#" class="dropdown-item d-flex align-items-center justify-content-center fs-7">Hide Comment</a>
+                    
+                    </li>
+                    </ul>
+
+                   
+
+                 </div>
+                 <!-- text -->
+                 <p class="fw-bold m-0">Sayeed Safvan P M
+                 </p>
+                 <p class="m-0 fs-7 bg-gray p-2 rounded">Yo nice pic</p>
+                
+
+            </div>
+
+         </div>
+
+
+         <!-- comment2 -->
+
+         <div class="d-flex align-items-center my-1" style="margin-top: -2rem !important;">
+          
+          <!-- avatar -->
+          <img src="pic.jpeg" alt="avatar" class="rounded-circle" style="height: 38px; width: 38px; object-fit: cover;">
+            <!-- cmmnt -->
+
+            <div class="p-3 rounded w-100 comment__input">
+              <!-- menu -->
+                 <div class="d-flex justify-content-end">
+                  <i class="fas fa-ellipsis-h" type="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
+
+                  <!-- menu -->
+                  <ul class="dropdown-menu border-0 shadow" aria-labelledby="post1">
+                    <li class="d-flex align-items-center">
+                    
+                      <a href="#" class="dropdown-item d-flex align-items-center justify-content-center fs-7">Delete Comment</a>
+                    
+                    </li>
+                    
+                    <li class="d-flex align-items-center">
+                    
+                      <a href="#" class="dropdown-item d-flex align-items-center justify-content-center fs-7">Report Comment</a>
+                    
+                    </li>
+                    
+                    <li class="d-flex align-items-center">
+                    
+                      <a href="#" class="dropdown-item d-flex align-items-center justify-content-center fs-7">Hide Comment</a>
+                    
+                    </li>
+                    </ul>
+
+                   
+
+                 </div>
+                 <!-- text -->
+                 <p class="fw-bold m-0">Sayeed Safvan P M
+                 </p>
+                 <p class="m-0 fs-7 bg-gray p-2 rounded">Yo nice pic</p>
+                
+
+            </div>
+
+         </div>
+
+         <!-- createcomment -->
+
+             <form class="d-flex my-1">
+
+               <div>
+                <img src="pic.jpeg" alt="propic" class="rounded-circle me-2" style="width: 38px; height: 38px; object-fit: cover;">
+               </div>
+               <!-- input -->
+               <input type="text" class="form-control border-0 rounded-pill bg-gray" placeholder="write a comment...">
+
+             </form>
+
+        </div>
+      </div>
+    </div>
+   
+
+  </div>
+
+ </div>
+
+
+ </div>
+ <!-- post 1 end -->
+
+
+
+
+ <!-- post 2 -->
+
+ <div class="bg-white p-4 rounded shadow mt-3">
+
+  <!-- author -->
+
+  <div class="d-flex justify-content-between">
+
+    <!-- avatr -->
+
+    <div class="d-flex">
+      <img src="pic.jpeg" alt="bruh" class="rounded-circle me-2" style="height: 38px; width: 38px; object-fit: cover;">
+      <div>
+        <p class="m-0" fw-bold">Sayeed Safvan P M</p>
+        <span class="text-muted" fs-7">September 13 at 1:45am</span>
+      </div>
+    </div>
+    <!-- edit -->
+    <i class="fas fa-ellipsis-h" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="post1" ></i>
+
+    <!-- editmenu -->
+    <ul class="dropdown-menu border-0 shadow" aria-labelledby="post1">
+<li class="d-flex align-items-center">
+
+  <a href="#" class="dropdown-item d-flex align-items-center justify-content-center fs-7">Edit Post</a>
+
+</li>
+
+<li class="d-flex align-items-center">
+
+  <a href="#" class="dropdown-item d-flex align-items-center justify-content-center fs-7">Delete Post</a>
+
+</li>
+
+<li class="d-flex align-items-center">
+
+  <a href="#" class="dropdown-item d-flex align-items-center justify-content-center fs-7">Share Post</a>
+
+</li>
+
+
+
+    </ul>
+
+
+  </div>
+      <!-- content -->
+  <div class="mt-3 d-flex align-items-center justify-content-center">
+
+    <div>
+      <p>Hey guys.. Its me sayeed</p>
+      <img src="pic.jpeg" alt="bruh" class="img-fluid">
+      <!-- imgfluid used to keep my image responsive -->
+    </div>
+    
+     </div>
+
+<!-- comment section -->
+<div class="position-relative mt-3 post__comment">
+
+  <!-- in the comments ill be using the accordion -->
+
+  <!-- likes -->
+
+
+  <div class="d-flex align-items-center position-absolute top-0 start-0" style="height: 50px; z-index: 5;">
+  <div class="me-2">
+     <i class="fas fa-thumbs-up text-primary"></i>
+     <i class="fab fa-gratipay text-danger"></i>
+     <i class="fas fa-grin-squint text-warning"></i>
+     <!-- this caused some issues in the display so ill be giving this a custom style in the css, so thats why i used the custom class post__comment in the main div -->
+
+  </div>
+   <p class="m-0 text-muted fs-7">Rashid, Hakim and 3 others</p>
+
+  </div>
+
+
+  <div class="accordion" id="accordion3">
+    <div class="accordion-item border-0">
+
+      <!-- comment collapse -->
+
+
+      <h2 class="accordion-header" id="headingOne">
+        <div class="accordion-button collapsed d-none d-lg-flex justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#post3" aria-expanded="true" aria-controls="collapseOne" style="background-color: transparent !important;">
+         Hakeem and 3 others commented...
+        </div>
+      </h2>
+
+
+      <!-- likes bar -->
+
+        <div class="d-flex justify-content-around">
+
+
+
+          <!-- like icon-->
+
+          <div class="d-flex align-items-center justify-content-center dropdown-item text-muted p-1 likebtn" type="button" style="margin-top: -10px;" >
+
+            <i class="fas fa-thumbs-up me-3"></i>
+            <p class="m-0">Like</p>
+
+
+          </div>
+          <!-- comment icon -->
+
+          <div class="d-flex align-items-center justify-content-center dropdown-item text-muted p-1 cmntbtn" type="button" data-bs-toggle="collapse" data-bs-target="#post3" aria-expanded="true" aria-controls="collapseOne" style="margin-top: -10px;">
+
+            <i class="fas fa-comment-alt me-3"></i>
+            <p class="m-0">Comment</p>
+
+
+          </div>
+
+
+          
+ 
+
+        </div>
+      
+
+
+
+      <!-- comment expand -->
+      <div id="post3" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordion3">
+        <div class="accordion-body">
+         <!-- comment1 -->
+         <div class="d-flex align-items-center my-1">
+          
+          <!-- avatar -->
+          <img src="pic.jpeg" alt="avatar" class="rounded-circle" style="height: 38px; width: 38px; object-fit: cover;">
+            <!-- cmmnt -->
+
+            <div class="p-3 rounded w-100 comment__input">
+              <!-- menu -->
+                 <div class="d-flex justify-content-end">
+                  <i class="fas fa-ellipsis-h" type="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
+
+                  <!-- menu -->
+                  <ul class="dropdown-menu border-0 shadow" aria-labelledby="post1">
+                    <li class="d-flex align-items-center">
+                    
+                      <a href="#" class="dropdown-item d-flex align-items-center justify-content-center fs-7">Delete Comment</a>
+                    
+                    </li>
+                    
+                    <li class="d-flex align-items-center">
+                    
+                      <a href="#" class="dropdown-item d-flex align-items-center justify-content-center fs-7">Report Comment</a>
+                    
+                    </li>
+                    
+                    <li class="d-flex align-items-center">
+                    
+                      <a href="#" class="dropdown-item d-flex align-items-center justify-content-center fs-7">Hide Comment</a>
+                    
+                    </li>
+                    </ul>
+
+                   
+
+                 </div>
+                 <!-- text -->
+                 <p class="fw-bold m-0">Sayeed Safvan P M
+                 </p>
+                 <p class="m-0 fs-7 bg-gray p-2 rounded">Yo nice pic</p>
+                
+
+            </div>
+
+         </div>
+
+
+         <!-- comment2 -->
+
+         <div class="d-flex align-items-center my-1" style="margin-top: -2rem !important;">
+          
+          <!-- avatar -->
+          <img src="pic.jpeg" alt="avatar" class="rounded-circle" style="height: 38px; width: 38px; object-fit: cover;">
+            <!-- cmmnt -->
+
+            <div class="p-3 rounded w-100 comment__input">
+              <!-- menu -->
+                 <div class="d-flex justify-content-end">
+                  <i class="fas fa-ellipsis-h" type="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
+
+                  <!-- menu -->
+                  <ul class="dropdown-menu border-0 shadow" aria-labelledby="post1">
+                    <li class="d-flex align-items-center">
+                    
+                      <a href="#" class="dropdown-item d-flex align-items-center justify-content-center fs-7">Delete Comment</a>
+                    
+                    </li>
+                    
+                    <li class="d-flex align-items-center">
+                    
+                      <a href="#" class="dropdown-item d-flex align-items-center justify-content-center fs-7">Report Comment</a>
+                    
+                    </li>
+                    
+                    <li class="d-flex align-items-center">
+                    
+                      <a href="#" class="dropdown-item d-flex align-items-center justify-content-center fs-7">Hide Comment</a>
+                    
+                    </li>
+                    </ul>
+
+                   
+
+                 </div>
+                 <!-- text -->
+                 <p class="fw-bold m-0">Sayeed Safvan P M
+                 </p>
+                 <p class="m-0 fs-7 bg-gray p-2 rounded">Yo nice pic</p>
+                
+
+            </div>
+
+         </div>
+
+         <!-- createcomment -->
+
+             <form class="d-flex my-1">
+
+               <div>
+                <img src="pic.jpeg" alt="propic" class="rounded-circle me-2" style="width: 38px; height: 38px; object-fit: cover;">
+               </div>
+               <!-- input -->
+               <input type="text" class="form-control border-0 rounded-pill bg-gray" placeholder="write a comment...">
+
+             </form>
+
+        </div>
+      </div>
+    </div>
+   
+
+  </div>
+
+ </div>
+
+
+ </div>
+
+ <!-- post2 end -->
+
+
+ <!-- post 3  -->
+ 
+ <div class="bg-white p-4 rounded shadow mt-3">
+
+  <!-- author -->
+
+  <div class="d-flex justify-content-between">
+
+    <!-- avatr -->
+
+    <div class="d-flex">
+      <img src="pic.jpeg" alt="bruh" class="rounded-circle me-2" style="height: 38px; width: 38px; object-fit: cover;">
+      <div>
+        <p class="m-0" fw-bold">Sayeed Safvan P M</p>
+        <span class="text-muted" fs-7">September 13 at 1:45am</span>
+      </div>
+    </div>
+    <!-- edit -->
+    <i class="fas fa-ellipsis-h" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="post1" ></i>
+
+    <!-- editmenu -->
+    <ul class="dropdown-menu border-0 shadow" aria-labelledby="post1">
+<li class="d-flex align-items-center">
+
+  <a href="#" class="dropdown-item d-flex align-items-center justify-content-center fs-7">Edit Post</a>
+
+</li>
+
+<li class="d-flex align-items-center">
+
+  <a href="#" class="dropdown-item d-flex align-items-center justify-content-center fs-7">Delete Post</a>
+
+</li>
+
+<li class="d-flex align-items-center">
+
+  <a href="#" class="dropdown-item d-flex align-items-center justify-content-center fs-7">Share Post</a>
+
+</li>
+
+
+
+    </ul>
+
+
+  </div>
+      <!-- content -->
+  <div class="mt-3 d-flex align-items-center justify-content-center">
+
+    <div>
+      <p>Hey guys.. Its me sayeed</p>
+      <img src="pic.jpeg" alt="bruh" class="img-fluid">
+      <!-- imgfluid used to keep my image responsive -->
+    </div>
+    
+     </div>
+
+<!-- comment section -->
+<div class="position-relative mt-3 post__comment">
+
+  <!-- in the comments ill be using the accordion -->
+
+  <!-- likes -->
+
+
+  <div class="d-flex align-items-center position-absolute top-0 start-0" style="height: 50px; z-index: 5;">
+  <div class="me-2">
+     <i class="fas fa-thumbs-up text-primary"></i>
+     <i class="fab fa-gratipay text-danger"></i>
+     <i class="fas fa-grin-squint text-warning"></i>
+     <!-- this caused some issues in the display so ill be giving this a custom style in the css, so thats why i used the custom class post__comment in the main div -->
+
+  </div>
+   <p class="m-0 text-muted fs-7">Rashid, Hakim and 3 others</p>
+
+  </div>
+
+
+  <div class="accordion" id="accordion2">
+    <div class="accordion-item border-0">
+
+      <!-- comment collapse -->
+
+
+      <h2 class="accordion-header" id="headingOne">
+        <div class="accordion-button collapsed d-none d-lg-flex justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#post2" aria-expanded="true" aria-controls="collapseOne" style="background-color: transparent !important;">
+         Hakeem and 3 others commented...
+        </div>
+      </h2>
+
+
+      <!-- likes bar -->
+
+        <div class="d-flex justify-content-around">
+
+
+
+          <!-- like icon-->
+
+          <div class="d-flex align-items-center justify-content-center dropdown-item text-muted p-1 likebtn" type="button" style="margin-top: -10px;" >
+
+            <i class="fas fa-thumbs-up me-3"></i>
+            <p class="m-0">Like</p>
+
+
+          </div>
+          <!-- comment icon -->
+
+          <div class="d-flex align-items-center justify-content-center dropdown-item text-muted p-1 cmntbtn" type="button" data-bs-toggle="collapse" data-bs-target="#post2" aria-expanded="true" aria-controls="collapseOne" style="margin-top: -10px;">
+
+            <i class="fas fa-comment-alt me-3"></i>
+            <p class="m-0">Comment</p>
+
+
+          </div>
+
+
+          
+ 
+
+        </div>
+      
+
+
+
+      <!-- comment expand -->
+      <div id="post2" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordion2">
+        <div class="accordion-body">
+         <!-- comment1 -->
+         <div class="d-flex align-items-center my-1">
+          
+          <!-- avatar -->
+          <img src="pic.jpeg" alt="avatar" class="rounded-circle" style="height: 38px; width: 38px; object-fit: cover;">
+            <!-- cmmnt -->
+
+            <div class="p-3 rounded w-100 comment__input">
+              <!-- menu -->
+                 <div class="d-flex justify-content-end">
+                  <i class="fas fa-ellipsis-h" type="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
+
+                  <!-- menu -->
+                  <ul class="dropdown-menu border-0 shadow" aria-labelledby="post2">
+                    <li class="d-flex align-items-center">
+                    
+                      <a href="#" class="dropdown-item d-flex align-items-center justify-content-center fs-7">Delete Comment</a>
+                    
+                    </li>
+                    
+                    <li class="d-flex align-items-center">
+                    
+                      <a href="#" class="dropdown-item d-flex align-items-center justify-content-center fs-7">Report Comment</a>
+                    
+                    </li>
+                    
+                    <li class="d-flex align-items-center">
+                    
+                      <a href="#" class="dropdown-item d-flex align-items-center justify-content-center fs-7">Hide Comment</a>
+                    
+                    </li>
+                    </ul>
+
+                   
+
+                 </div>
+                 <!-- text -->
+                 <p class="fw-bold m-0">Sayeed Safvan P M
+                 </p>
+                 <p class="m-0 fs-7 bg-gray p-2 rounded">Yo nice pic</p>
+                
+
+            </div>
+
+         </div>
+
+
+         <!-- comment2 -->
+
+         <div class="d-flex align-items-center my-1" style="margin-top: -2rem !important;">
+          
+          <!-- avatar -->
+          <img src="pic.jpeg" alt="avatar" class="rounded-circle" style="height: 38px; width: 38px; object-fit: cover;">
+            <!-- cmmnt -->
+
+            <div class="p-3 rounded w-100 comment__input">
+              <!-- menu -->
+                 <div class="d-flex justify-content-end">
+                  <i class="fas fa-ellipsis-h" type="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
+
+                  <!-- menu -->
+                  <ul class="dropdown-menu border-0 shadow" aria-labelledby="post1">
+                    <li class="d-flex align-items-center">
+                    
+                      <a href="#" class="dropdown-item d-flex align-items-center justify-content-center fs-7">Delete Comment</a>
+                    
+                    </li>
+                    
+                    <li class="d-flex align-items-center">
+                    
+                      <a href="#" class="dropdown-item d-flex align-items-center justify-content-center fs-7">Report Comment</a>
+                    
+                    </li>
+                    
+                    <li class="d-flex align-items-center">
+                    
+                      <a href="#" class="dropdown-item d-flex align-items-center justify-content-center fs-7">Hide Comment</a>
+                    
+                    </li>
+                    </ul>
+
+                   
+
+                 </div>
+                 <!-- text -->
+                 <p class="fw-bold m-0">Sayeed Safvan P M
+                 </p>
+                 <p class="m-0 fs-7 bg-gray p-2 rounded">Yo nice pic</p>
+                
+
+            </div>
+
+         </div>
+
+         <!-- createcomment -->
+
+             <form class="d-flex my-1">
+
+               <div>
+                <img src="pic.jpeg" alt="propic" class="rounded-circle me-2" style="width: 38px; height: 38px; object-fit: cover;">
+               </div>
+               <!-- input -->
+               <input type="text" class="form-control border-0 rounded-pill bg-gray" placeholder="write a comment...">
+
+             </form>
+
+        </div>
+      </div>
+    </div>
+   
+
+  </div>
+
+ </div>
+
+
+ </div>
+
+<!-- post3 end -->
+
+
+
+
+        
+    
+        
+     
+        
+        
+        
+        </div>
+
+ 
+   
+     
 
 
 <!-- ================================================================================ -->
@@ -835,9 +1701,9 @@ d-none: This is another Bootstrap class that is used to hide an element by defau
   
             
       <!-- chatbar  -->
-      <div class="d-none d-md-block col-12 col-lg-3">
+      <div class="d-none d-lg-block col-12 col-lg-3">
 
-        <div class="d-none d-xxl-block h-100 fixed-top end-0 overflow-hidden" style="max-width: 360px; width: 100%; z-index: 4; padding-top: 56px; left: initial !important;"></div>
+        <div class="d-none d-xxl-block h-100 fixed-top end-0 overflow-hidden scrollbar" style="max-width: 360px; width: 100%; z-index: 4; padding-top: 56px; left: initial !important;"> 
             
          <div class="p-3 mt-4">
           <!-- sponsors -->
@@ -846,13 +1712,13 @@ d-none: This is another Bootstrap class that is used to hide an element by defau
           <!-- sponser 1 -->
         <div class="d-flex mb-3">
           
-          <img src="pic.jpeg" class="rounded" style="height: 5.2rem; width: 5.2rem;" alt="">
+          <img src="pic.jpeg" class="rounded" style="height: 5.2rem; width: 5.2rem; object-fit: cover;" alt="">
           <p class="text-muted p-2 fs-9" style="line-height: 1rem;"><a href="#" class="text-decoration-none text-muted" data-bs-toggle="tooltip" title="www.amazon.com" >Check out this ibanez guitar on amazon!! <br class="fs-8"> www.amazon.com</a></p>
         </div>
         
         <div class="d-flex mb-3">
           
-          <img src="pic.jpeg" class="rounded" style="height: 5.2rem; width: 5.2rem;" alt="">
+          <img src="pic.jpeg" class="rounded" style="height: 5.2rem; width: 5.2rem; object-fit: cover;" alt="">
           <p class="text-muted p-2 fs-9" style="line-height: 1rem;"><a href="#" class="text-decoration-none text-muted" data-bs-toggle="tooltip" title="www.amazon.com" >Check out this ibanez guitar on amazon!! <br class="fs-8"> www.amazon.com</a></p>
         </div>
               
@@ -941,13 +1807,15 @@ d-none: This is another Bootstrap class that is used to hide an element by defau
              <p class="m-0 mt-1">Sayeed Safvan P M</p>
 
             </div>
-
+           
+           <i class="fa-regular fa-pen-to-square text-muted fs-4 fw-normal" style="margin-left: 20rem; position: fixed; bottom: 0; margin-bottom: 0.8rem;"></i>
 
             
             
           
             
             </div>
+           
          
 
 

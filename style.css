@@ -16,14 +16,6 @@
 }
 
 
-/* the mediaquery  to set the footer to be fixed in deskltop view and free in mobile view*/
-@media (min-width: 62em){
-          footer{
-                    position: fixed;
-                    bottom: 0;
-                    width: 100%;
-          }
-}
 li:hover{
          
           cursor: pointer;
@@ -44,3 +36,39 @@ li:hover{
       .bg-grey1{
              background-color: rgb(79, 77, 77);
       }
+
+      .scrollbar:hover {
+        overflow: auto !important;
+      }
+
+      .post__comment .accordion-button:after {
+        margin-left: 0 !important;
+        display: none !important;
+        width: 30px;
+      }
+      
+      .post__comment .accordion-button:hover{
+        background: none !important;
+        border-color: transparent !important;
+      }
+
+      .post__comment .accordion-button:not(.collapsed){
+        /* this is to target the uncollapsed view of the accordion button */
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+      .post__comment .likebtn,.cmntbtn:hover{
+        background-color: white !important;
+      }
+
+      
+/* the mediaquery  to set the footer to be fixed in deskltop view and free in mobile view*/
+@media (min-width: 62em){
+  footer{
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+          
+  }
+}
