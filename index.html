@@ -15,6 +15,8 @@
                     crossorigin="anonymous">
           <!-- css -->
           <link rel="stylesheet" href="style.css">
+          <!-- jquery -->
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body class="bg-gray">
@@ -45,22 +47,39 @@
                               <!-- div for holding the form div is created -->
                               <div class="bg-white shadow rounded p-3 input-group-lg">
                                         <!-- div for each input field is created  , form-control is a clas for styling input labels using bootstrap-->
-                                        <input type="email" class="form-control my-3"
-                                                  placeholder="Email address or phone number" />
-                                        <input type="password" class="form-control my-3" placeholder="Password" />
+                                        <form>
+                                        <div class="d-flex input-group">
 
-                                        <a href="feed.html">
-                                                  <button class="btn btn-primary w-100 my-3">Log In</button>
-                                        </a>
+                                        <input type="email" class="form-control my-3"
+                                                  placeholder="Email address or phone number" id="email" name="loginuser" required />
+                                                
+                                                </div>
+
+                                                <div class="d-flex">
+                                                      <input type="password" class="form-control my-3"
+                                                                placeholder="Password" id="password" name="loginpassword" required />
+                                                                
+                                                              </div>
+                                                           
+
+                                      
+                                        
+                                                  <input type="submit" value="Log in" class="btn btn-primary w-100 my-3" onclick="auth()" ></button>
+                                                 
+                                          
+                                          </form>
+                                       
                                         <a href="#" class="text-decoration-none text-center">
                                                   <p>Forgotten password</p>
                                         </a>
                                         <!-- create form -->
                                         <hr>
+                                    
                                         <div class="text-center my-4">
                                                   <button class="btn btn-success btn-lg" data-bs-toggle="modal"
                                                             data-bs-target="#createModal">Create new Account</button>
                                         </div>
+                                       
                                         <!-- i then searched for modal and copied code from live demo section -->
                                         <!-- create modal -->
                                         <!-- Button trigger modal -->
@@ -93,30 +112,36 @@
                                                                                           aria-label="Close"></button>
                                                                       </div>
                                                                       <!-- body -->
+                                                                     
                                                                       <div class="modal-body">
+                                                                       
+                                                                        <form id="submit-form" action="" method="POST">
                                                                                 <!-- name -->
                                                                                 <div class="row">
                                                                                           <div class="col">
-                                                                                                    <input type="text"
+                                                                                                
+                                                                                                    <input type="text" name="firstname"
                                                                                                               class="form-control"
-                                                                                                              placeholder="First Name">
+                                                                                                              placeholder="First Name" id="firstname" required>
+                                                                                                            
                                                                                           </div>
                                                                                           <div class="col">
-                                                                                                    <input type="text"
+                                                                                                    <input type="text" name="secondname"
                                                                                                               class="form-control"
-                                                                                                              placeholder="Second Name">
+                                                                                                              placeholder="Second Name" id="secondname" required>
                                                                                           </div>
                                                                                 </div>
+                                                                             
 
 
                                                                                 <!-- email -->
 
-                                                                                <input type="email"
+                                                                                <input type="email" name="email"
                                                                                           class="form-control my-3"
-                                                                                          placeholder="Email address or mobile number">
-                                                                                <input type="passowrd"
+                                                                                          placeholder="Email address or mobile number" id="email" required>
+                                                                                <input type="passowrd" name="password"
                                                                                           class="form-control my-3"
-                                                                                          placeholder="New Password">
+                                                                                          placeholder="New Password" id="password" required>
                                                                                 <!-- we dont nee a row class since the email and password are gonna take the full wdth of the body -->
                                                                                 <!-- dob now lets work on dob -->
                                                                                 <div class="row my-3">
@@ -127,7 +152,7 @@
                                                                                           <div class="col">
                                                                                                     <select name=""
                                                                                                               id=""
-                                                                                                              class="form-select">
+                                                                                                              class="form-select" required>
                                                                                                               <option
                                                                                                                         value="1">
                                                                                                                         1
@@ -315,7 +340,7 @@
                                                                                           <div class="col">
                                                                                                     <select name=""
                                                                                                               id=""
-                                                                                                              class="form-select">
+                                                                                                              class="form-select" required>
                                                                                                               <option
                                                                                                                         value="1981">
                                                                                                                         1981
@@ -458,14 +483,13 @@
                                                                                                               <input class="form-check-input"
                                                                                                                         type="radio"
                                                                                                                         name="flexRadioDefault"
-                                                                                                                        id="flexRadioDefault1">
+                                                                                                                        id="flexRadioDefault1" required>
 
                                                                                                     </div>
 
                                                                                           </div>
                                                                                           <div class="col">
-                                                                                                    <div
-                                                                                                              class="border rounded p-2">
+                                                                                                    <div class="border rounded p-2">
                                                                                                               <label class="form-check-label"
                                                                                                                         for="flexRadioDefault1">
                                                                                                                         female
@@ -473,19 +497,20 @@
                                                                                                               <input class="form-check-input"
                                                                                                                         type="radio"
                                                                                                                         name="flexRadioDefault"
-                                                                                                                        id="flexRadioDefault1">
+                                                                                                                        id="flexRadioDefault1" required>
 
                                                                                                     </div>
 
                                                                                           </div>
                                                                                 </div>
                                                                       </div>
-                                                                     <div class="text-muted fs-7">By submitting you're creating an account in facebook</div>
+                                                                     <div class="text-muted fs-7 ms-5">By submitting you're creating an account in facebook</div>
                                                                       <!-- disclaimer -->
                                                                       <!-- btn -->
                                                                       <div class="text-center mt-2 pb-2">
-                                                                      <button type="button" class="btn btn-success"
-                                                                      data-bs-dismiss="modal">Sign up</button>
+                                                                      <input type="submit" class="bg-success border-0 fs-5 rounded text-white"
+                                                                     id="sub">
+                                                                  </form>
                                                             </div>
 
 
