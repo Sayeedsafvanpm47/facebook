@@ -6,7 +6,9 @@ function auth(){
           
           if(email.length!=0 && password.length!=0)
           {
-                    window.location.assign("feed.html");
+                    // window.location.assign("feed.html");
+                    window.location.href = 'https://sayeedsafvanpm47.github.io/facebook/feed.html';
+
                     alert("Succesfully logged in");
           }
 }
